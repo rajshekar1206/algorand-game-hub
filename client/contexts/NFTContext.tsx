@@ -82,6 +82,15 @@ const BADGE_CATALOG: Omit<NFTBadge, 'id' | 'mintedAt' | 'txId' | 'assetId'>[] = 
     ipfsHash: 'QmStrategyMaster123...'
   },
   {
+    name: 'Memory Master',
+    description: 'Completed Memory Match with a high score',
+    image: '🧩',
+    gameType: 'memory',
+    requirement: 'Achieve a high score in Memory Match',
+    rarity: 'rare',
+    ipfsHash: 'QmMemoryMaster123...'
+  },
+  {
     name: 'First Steps',
     description: 'Played your first game on Algorand Game Hub',
     image: '👶',
@@ -107,6 +116,69 @@ const BADGE_CATALOG: Omit<NFTBadge, 'id' | 'mintedAt' | 'txId' | 'assetId'>[] = 
     requirement: 'Complete a token reward transaction',
     rarity: 'rare',
     ipfsHash: 'QmCryptoEnthusiast123...'
+  },
+  {
+    name: 'RPS Champion',
+    description: 'Achieved a long win streak in Rock-Paper-Scissors',
+    image: '✊📄✂️',
+    gameType: 'rps',
+    requirement: 'Reach a high score or long streak in RPS',
+    rarity: 'rare',
+    ipfsHash: 'QmRPSChampion123...'
+  },
+  {
+    name: 'Flappy Flyer',
+    description: 'Reached 100+ in Flappy Bird',
+    image: '🐦',
+    gameType: 'flappy',
+    requirement: 'Score 100 or more in Flappy Bird',
+    rarity: 'epic',
+    ipfsHash: 'QmFlappyFlyer123...'
+  },
+  {
+    name: 'Puzzle Pro',
+    description: 'Completed 15 Puzzle efficiently',
+    image: '🧮',
+    gameType: 'puzzle15',
+    requirement: 'High score in 15 Puzzle',
+    rarity: 'rare',
+    ipfsHash: 'QmPuzzlePro123...'
+  },
+  {
+    name: 'Simon Maestro',
+    description: 'Reached a long sequence in Simon Says',
+    image: '🎶',
+    gameType: 'simon',
+    requirement: 'High sequence length in Simon Says',
+    rarity: 'epic',
+    ipfsHash: 'QmSimonMaestro123...'
+  },
+  {
+    name: 'Sudoku Expert',
+    description: 'Solved expert Sudoku',
+    image: '🧠',
+    gameType: 'sudoku',
+    requirement: 'Solve an expert puzzle',
+    rarity: 'legendary',
+    ipfsHash: 'QmSudokuExpert123...'
+  },
+  {
+    name: 'Checkmate',
+    description: 'Won a Chess Mini match',
+    image: '♟️',
+    gameType: 'chess',
+    requirement: 'Win a Chess Mini game',
+    rarity: 'rare',
+    ipfsHash: 'QmCheckmate123...'
+  },
+  {
+    name: '2048 Master',
+    description: 'Reached 2048 tile',
+    image: '🔢',
+    gameType: 'game2048',
+    requirement: 'Create the 2048 tile',
+    rarity: 'epic',
+    ipfsHash: 'Qm2048Master123...'
   }
 ];
 

@@ -9,7 +9,7 @@ import { useWallet } from "./WalletContext";
 import { useRewards } from "./RewardsContext";
 import { useNFT } from "./NFTContext";
 
-export type GameType = "snake" | "trivia" | "tictactoe";
+export type GameType = "snake" | "trivia" | "tictactoe" | "memory" | "rps" | "flappy" | "puzzle15" | "simon" | "sudoku" | "chess" | "game2048";
 
 export interface GameScore {
   id: string;
@@ -99,6 +99,14 @@ const createInitialStats = (): PlayerStats => ({
     snake: { played: 0, highScore: 0, totalScore: 0 },
     trivia: { played: 0, highScore: 0, totalScore: 0 },
     tictactoe: { played: 0, highScore: 0, totalScore: 0 },
+    memory: { played: 0, highScore: 0, totalScore: 0 },
+    rps: { played: 0, highScore: 0, totalScore: 0 },
+    flappy: { played: 0, highScore: 0, totalScore: 0 },
+    puzzle15: { played: 0, highScore: 0, totalScore: 0 },
+    simon: { played: 0, highScore: 0, totalScore: 0 },
+    sudoku: { played: 0, highScore: 0, totalScore: 0 },
+    chess: { played: 0, highScore: 0, totalScore: 0 },
+    game2048: { played: 0, highScore: 0, totalScore: 0 },
   },
 });
 
@@ -121,6 +129,54 @@ const REWARD_TIERS = {
     { minScore: 5, tokens: 8 },
     { minScore: 10, tokens: 20 },
     { minScore: 25, tokens: 50, badge: "Strategy Master" },
+  ],
+  memory: [
+    { minScore: 30, tokens: 5 },
+    { minScore: 60, tokens: 10 },
+    { minScore: 90, tokens: 20 },
+    { minScore: 120, tokens: 40, badge: "Memory Master" },
+  ],
+  rps: [
+    { minScore: 5, tokens: 3 },
+    { minScore: 10, tokens: 7 },
+    { minScore: 20, tokens: 15 },
+    { minScore: 30, tokens: 25, badge: "RPS Champion" },
+  ],
+  flappy: [
+    { minScore: 10, tokens: 5 },
+    { minScore: 25, tokens: 15 },
+    { minScore: 50, tokens: 30 },
+    { minScore: 100, tokens: 60, badge: "Flappy Flyer" },
+  ],
+  puzzle15: [
+    { minScore: 100, tokens: 5 },
+    { minScore: 200, tokens: 10 },
+    { minScore: 300, tokens: 20 },
+    { minScore: 400, tokens: 40, badge: "Puzzle Pro" },
+  ],
+  simon: [
+    { minScore: 5, tokens: 5 },
+    { minScore: 10, tokens: 12 },
+    { minScore: 15, tokens: 25 },
+    { minScore: 20, tokens: 50, badge: "Simon Maestro" },
+  ],
+  sudoku: [
+    { minScore: 100, tokens: 10 },
+    { minScore: 200, tokens: 20 },
+    { minScore: 300, tokens: 35 },
+    { minScore: 400, tokens: 70, badge: "Sudoku Expert" },
+  ],
+  chess: [
+    { minScore: 1, tokens: 5 },
+    { minScore: 3, tokens: 12 },
+    { minScore: 5, tokens: 25 },
+    { minScore: 10, tokens: 60, badge: "Checkmate" },
+  ],
+  game2048: [
+    { minScore: 256, tokens: 5 },
+    { minScore: 512, tokens: 10 },
+    { minScore: 1024, tokens: 25 },
+    { minScore: 2048, tokens: 60, badge: "2048 Master" },
   ],
 };
 
