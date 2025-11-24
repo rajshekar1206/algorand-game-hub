@@ -9,7 +9,8 @@ import {
   Zap,
   Brain,
   Target,
-  Star
+  Star,
+  Puzzle
 } from "lucide-react";
 
 const games = [
@@ -41,6 +42,86 @@ const games = [
     rewards: "3-30 ALGO tokens",
     icon: Target,
     color: "from-purple-500 to-pink-600",
+    comingSoon: false
+  },
+  {
+    id: "memory",
+    name: "Memory Match",
+    description: "Flip cards to find pairs. Fewer moves and faster time yield better scores.",
+    difficulty: "Easy",
+    rewards: "5-40 ALGO tokens",
+    icon: Puzzle,
+    color: "from-orange-500 to-amber-600",
+    comingSoon: false
+  },
+  {
+    id: "rps",
+    name: "Rock-Paper-Scissors",
+    description: "Beat the AI and build win streaks for bonus rewards.",
+    difficulty: "Easy",
+    rewards: "3-25 ALGO tokens",
+    icon: Target,
+    color: "from-amber-500 to-yellow-600",
+    comingSoon: false
+  },
+  {
+    id: "flappy",
+    name: "Flappy Bird",
+    description: "Fly through pipes. Precise timing wins!",
+    difficulty: "Medium",
+    rewards: "5-60 ALGO tokens",
+    icon: Target,
+    color: "from-teal-500 to-emerald-600",
+    comingSoon: false
+  },
+  {
+    id: "puzzle15",
+    name: "15 Puzzle",
+    description: "Slide tiles to arrange them in order.",
+    difficulty: "Medium",
+    rewards: "5-40 ALGO tokens",
+    icon: Target,
+    color: "from-indigo-500 to-blue-600",
+    comingSoon: false
+  },
+  {
+    id: "simon",
+    name: "Simon Says",
+    description: "Repeat the sequence. Memory challenge!",
+    difficulty: "Easy",
+    rewards: "5-50 ALGO tokens",
+    icon: Target,
+    color: "from-lime-500 to-green-600",
+    comingSoon: false
+  },
+  {
+    id: "sudoku",
+    name: "Sudoku",
+    description: "Fill the grid with valid numbers.",
+    difficulty: "Hard",
+    rewards: "10-70 ALGO tokens",
+    icon: Target,
+    color: "from-yellow-500 to-amber-600",
+    comingSoon: false
+  },
+  {
+    id: "chess",
+    name: "Chess Mini",
+    description: "Capture the king to win.",
+    difficulty: "Medium",
+    rewards: "5-60 ALGO tokens",
+    icon: Target,
+    color: "from-slate-500 to-gray-600",
+    comingSoon: false
+  },
+  {
+    id: "2048",
+    name: "2048",
+    description: "Merge tiles to reach 2048.",
+    difficulty: "Medium",
+    rewards: "5-60 ALGO tokens",
+    icon: Target,
+    color: "from-rose-500 to-pink-600",
     comingSoon: false
   },
 ];
